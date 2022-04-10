@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "migrants-and-healthcare",
+  "private_key_id": "753aa5c0977dacbcf0570018078af8a146d62a60",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCpOdvYACI50v2v\nXkcNh0QqwW7lIPt20qLTiWBpGzusfa4XnbhNKiIVryWFruFIwSM9lsc74o+6ayrd\nhA3AnWiCUVf7nyXVi+xRYUCE2GRG6cF1dgSZWD9qN6wt7j2nIErc1CVmMdeWaeXg\nKJAmhz56QEIUi80o4LaUtKwnhZx2NLX6f7rV/mRLD35E4Dax04V9NoZx9Y4pNiUr\na8Z9PPuy0TG3Ym12IlTxJIE1dfU90Nc7Mhu8RKslZe38AQ0AoGP3i6lAZCGn0JO5\ntbPTFzHHvp9qhdjVXbxnqEv2ri5wVvnYzc/e3zj+jmCz/qhDb0fIR9mR4Or+ym65\ncU0l15JdAgMBAAECggEAUybJdhT2vFgG7EVUf3rATYv3nCG9PjEY7f16QJsvkr28\nrgEDPvNdhS8nLk10iEXStaAhbLUSL6UaDnelNEiEQkiLBWo5cnlLGN/DDqOvfkK9\nGyTu9JRusJgDhBwk8jqFXoXljJYgG1oUqLT1w+C/m914OtVI7XWhcWdnkhHuhAvq\n9md2QL6FBzbuyHwacfUl4R1/97BmMW6MDn96juVQr59NSgcyUlJdyO5tEs4qfhz+\nijscbhSaEkeAaCiDDXg0rxkKvnw1rg4pYsMCfjauWJRQLGqz+c8/pY0sNajPfA7P\ngqvRkD8fN+FxqCcNOiwwo+1FsP7q67jMf5LwTbYaxwKBgQDvUMkc/XDyz1bqQ0pu\nJqIVe7bfK+ttSYsO6E0LMqvx93ZW7L6snOWsBlAcxw3zmlPytYaUivq4XEOts7Zc\nVBcUfrx0Wy5qdRtWLw7fsG5O4veELcmBgmyfYSEegLycf1yipBLboFW1NfLzNe1n\nCFXzDKY4WW0bSdrzuwseqSVwWwKBgQC1BiQcRbAN2REN5UDXacOP5+fTVlVhktk4\nGIFkDWYNqdmKqv77MPTTV6rPt+9gGUAxCkYQnAJfQpvGzkrdBHtVanZeu/+9Z5k5\n5K/PTd5vWcrA1+suenZDXU7uceCQhfoFqYI4H0oXp+WXEInxrCoD0OjPdTDvasBM\nGXnu/uSFpwKBgQDFd9aK+kGByT5BjQbUf0JNEckiuz3G7uE0itBPxh8FSJk4Pp9T\nFR+aY5clN8a2VIiig9Cpr0gUaeVaZii6ZJSqz6y3IinZpAnLgob2YsGSjEuKoLFe\nEP2KQX4vijCXvav1dAcvfExce0ieEMh0tPce1zgs1PVnh/iIFrWlNhLzcwKBgQCi\nCXAzWnG/w4iPfqFu8P4bh0MtGj9tCsyjeNQBYjjyjBHtHSkGYgkUUInWS1fbFl8u\nRnr3DR7WdEIKT8gVVJitmZGBNRkzSlOOzdRNZO9xjtd9jQi4XugTXqdzqr2PwE1P\n2i503BUvXZuWgDhp+mjVZ5+ta8I03MJqm/dYZhLaSwKBgQDgglM+4WuAEKo6QjGL\n61YoxHCP5e0jrZwq/N1fuxpAhM6EKQ10rrnNMHKDLFVwvFtl0gd5kJSUJb5kadTk\nBsLENyuP31DD50s1XdLPyTpZbbTtNmf4iQhbqg2+vm39OIpNqOlNEt5L7JN5cO6O\nqNx1pUazt4eYamfu7qRUjxtTVg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-d08ej@migrants-and-healthcare.iam.gserviceaccount.com",
+  "client_id": "114888095094432337385",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-d08ej%40migrants-and-healthcare.iam.gserviceaccount.com"
+}

@@ -10,5 +10,22 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  },
+
+  {
+    resolve: `gatsby-source-firestore`,
+    options: {
+      credential: require('./firebase-cred.json'),
+      types:[
+          {type: 'Test',
+          collection: 'test',
+          map: doc => ({
+            isWorking: doc.isWorking
+          })
+        }
+      ]
+    }
+  }
+
+]
 };
