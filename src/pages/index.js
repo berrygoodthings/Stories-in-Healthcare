@@ -1,4 +1,4 @@
-import {Link,  graphql } from "gatsby"
+import {Link,  graphql, StaticQuery, useStaticQuery} from "gatsby"
 import * as React from "react"
 import Layout from '../components/layout'
 
@@ -129,28 +129,24 @@ const links = [
 ]
 
 // markup
-const IndexPage = ({ data }) => {
+const IndexPage = ({}) => {
+  const data = useStaticQuery(graphql`
+  query {
+    allTest {
+      nodes {
+        isWorking
+      }
+    }
+    }`)
+
+  
   return (
-    <Layout>
+    <Layout data = {data}>
       <h1>Test</h1>
-      <table>
-            {data.allTest.edges.map(({node, index}) => (
-          <tr>
-            <td>{node.isWorking}</td>
-          </tr>
-        ))}
-      </table>
+          {/**This successfully prints out a working query!! see images for example of return structure */}
+            {data.allTest.nodes[0].isWorking ? "it's working!" : "it is not working :("}
     </Layout>
   )
 }
-
 export default IndexPage
 
-const data = graphql`
-    query {
-      allTest {
-        nodes {
-          isWorking
-        }
-      }
-      }`
