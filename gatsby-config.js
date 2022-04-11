@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `story`,
+    title: `Istorio`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-emotion", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
