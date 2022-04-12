@@ -1,6 +1,7 @@
 import {Link,  graphql, StaticQuery, useStaticQuery} from "gatsby"
 import * as React from "react"
 import Layout from '../components/layout'
+import AboutPage from "./about"
 
 
 // styles
@@ -99,7 +100,7 @@ const IndexPage = ({}) => {
       <h1>Test</h1>
           {/**This successfully prints out a working query!! see images for example of return structure */}
             {data.allTest.nodes[0].isWorking ? "it's working!" : "it is not working :("}
-          <Link to={"src/pages/{about}.js"}>Test link</Link>
+          <Link to={AboutPage}>Test link</Link>
     </Layout>
   )
 }
