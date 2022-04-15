@@ -108,6 +108,9 @@ const IndexPage = ({}) => {
             <Col className="d-none d-md-block d-xl-none d-xxl-none">
              <img src={sideBanner} alt="boy"/>
             </Col>
+            <Col>
+              <img src="https://firebasestorage.googleapis.com/v0/b/migrants-and-healthcare.appspot.com/o/people%20outside%20banner.png?alt=media&token=0299539c-7270-4ad2-9821-f694512d0784" />
+            </Col>
           </Row>
           </div>
     </Layout>

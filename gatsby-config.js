@@ -21,11 +21,17 @@ module.exports = {
           collection: 'test',
           map: doc => ({
             isWorking: doc.isWorking
+          }
+          )},
+          {type: 'Stories',
+          collection: 'Stories',
+          map: doc => ({
+            testStory: doc.testStory
           })
-        }
+          }
+        
       ]
     }
-  }
-
-]
-};
+    }
+  ]
+  };
