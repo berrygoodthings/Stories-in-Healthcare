@@ -10,7 +10,7 @@ import styled from "@emotion/styled"
 const StyledFooter = styled.header`
       background: #9ADDEC;
       minHeight: {window.screen.availHeight * .1};
-      width:{window.screen.availWidth};
+      maxWidth:{window.screen.availWidth * .7};
       paddingTop: 70px;
 `
 

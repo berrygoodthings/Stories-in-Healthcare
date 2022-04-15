@@ -44,13 +44,13 @@ const Header = ({ siteTitle }) => (
       <Navbar.Collapse id="navbarResponsive">
         <Nav as = "ul" className = "ms-auto" style={{marginRight:window.screen.availWidth * .015}}>
           <Nav.Item as="li" style={{marginRight:window.screen.availWidth * .015}}>
-            <Link to="./about" className="nav-link" activeClassName="active">About</Link>
+            <Link to="/about" className="nav-link" activeClassName="active">About</Link>
           </Nav.Item>
           <Nav as="ul" style={{marginRight:window.screen.availWidth * .015}}>
-            <Link to="./resources" className="nav-link" activeClassName="active">Resources</Link>
+            <Link to="/resources" className="nav-link" activeClassName="active">Resources</Link>
           </Nav>
           <Nav as="ul" style={{marginRight:window.screen.availWidth * .015}}>
-            <Link to="./stories" className="nav-link" activeClassName="active">Stories</Link>
+            <Link to="/stories" className="nav-link" activeClassName="active">Stories</Link>
           </Nav>
           <Nav as="ul">
             <Search />

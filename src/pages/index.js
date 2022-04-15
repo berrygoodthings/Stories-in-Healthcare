@@ -2,7 +2,9 @@ import {Link,  graphql, StaticQuery, useStaticQuery} from "gatsby"
 import * as React from "react"
 import Layout from '../components/layout'
 import AboutPage from "./about"
-
+import {Col, Row} from "react-bootstrap"
+//etc
+import sideBanner from "../images/youngboy.png"
 
 // styles
 const pageStyles = {
@@ -100,7 +102,14 @@ const IndexPage = ({}) => {
       <h1>Test</h1>
           {/**This successfully prints out a working query!! see images for example of return structure */}
             {data.allTest.nodes[0].isWorking ? "it's working!" : "it is not working :("}
-          <Link to={AboutPage}>Test link</Link>
+          <Link to="/about">Test link</Link>
+          <div>
+          <Row>
+            <Col className="d-none d-md-block d-xl-none d-xxl-none">
+             <img src={sideBanner} alt="boy"/>
+            </Col>
+          </Row>
+          </div>
     </Layout>
   )
 }
