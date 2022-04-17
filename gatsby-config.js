@@ -26,8 +26,7 @@ module.exports = {
           {type: 'Stories',
           collection: 'Stories',
           map: doc => ({
-            testStory: doc.testStory
-          })
+            testStory: doc.testStory          })
           }
         
       ]
