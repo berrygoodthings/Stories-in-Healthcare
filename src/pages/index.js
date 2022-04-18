@@ -1,7 +1,6 @@
 import {Link,  graphql, StaticQuery, useStaticQuery} from "gatsby"
 import * as React from "react"
 import Layout from '../components/layout'
-import AboutPage from "./about"
 import {Col, Row} from "react-bootstrap"
 //etc
 import sideBanner from "../images/youngboy.png"

@@ -15,12 +15,14 @@ function StoryTemplate ({ data }) {
   //     </div>
   //   </Layout>
   // )
+  
+
 
   return(
     <Layout>
     <div>
       <h1>Hi</h1>
-    </div>
+      <div dangerouslySetInnerHTML={{ __html: data.stories.testStory }} />    </div>
     </Layout>
   )
 }
