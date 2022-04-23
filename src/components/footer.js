@@ -5,21 +5,20 @@ import { Container, Row, Col } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import styled from "@emotion/styled"
+import "./layout.css"
 
+const footerStyle= {
+  background: "#9ADDEC",
+  minWidth:"100%",
+  position:"fixed"
 
-const StyledFooter = styled.header`
-      background: #9ADDEC;
-      minHeight: {window.screen.availHeight * .1};
-      maxWidth:{window.screen.availWidth * .7};
-      paddingTop: 70px;
-`
-
-const Footer = ({}) => {
+}
+const Footer = ({props}) => {
     
     return(
-    <StyledFooter className = "navbar fixed-bottom">
+    <div style={footerStyle}>
       <h1>Developing</h1>
-    </StyledFooter>
+    </div>
     ) 
 }
 

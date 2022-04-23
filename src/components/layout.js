@@ -9,12 +9,14 @@
  import PropTypes from "prop-types"
  import {Link, useStaticQuery, graphql } from "gatsby"
  import { Container, Row, Col } from "react-bootstrap"
+ import "./layout.css"
+
  import 'bootstrap/dist/css/bootstrap.min.css'
 
  import Header from "./header"
  import Footer from "./footer"
- import styled from "@emotion/styled"
- import { css } from "@emotion/react"
+ import {css} from "@emotion/styled"
+ import {styled} from "@emotion/styled"
 
 
  const Layout = ({ children }) => {
@@ -31,12 +33,11 @@
    return (
      <>
        <Header siteTitle={data.site.siteMetadata.title} />
-       <div
-       >
-         <main>{children}</main>
-        
-        <Footer />
-       </div>
+       <div style={{paddingTop:"1rem"}}>
+         <div style={{topPadding:"1rem", bottomMargin:"1rem",  minHeight:"80vh"}}><main>{children}</main></div>
+         <Footer />
+         </div>
+
      </>
    )
  }

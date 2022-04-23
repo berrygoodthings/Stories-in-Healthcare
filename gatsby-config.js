@@ -29,7 +29,10 @@ module.exports = {
             testStory: doc.testStory,
             title: doc.title,
             summaryText: doc.summaryText,
-            cardImage: doc.cardImage
+            cardImage: doc.cardImage,
+            tags: doc.tags,
+            Banner: doc.bannerImage,
+            storyText: doc.storyText
                     })
           }
         

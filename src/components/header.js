@@ -1,10 +1,12 @@
+import "./layout.css"
+
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Container, Row, Col, Navbar, Nav } from "react-bootstrap"
-//import 'bootstrap/dist/css/bootstrap.min.css'
 
 import styled from "@emotion/styled"
+import {css, Global} from "@emotion/react"
 
 import Search from "./Search"
 
@@ -13,7 +15,7 @@ let height = window.screen.availHeight;
 
 const StyledHeader = styled.header`
       background: #9ADDEC;
-      marginBottom: 1.45rem;
+      paddingBottom: 1.45rem;
       maxHeight: {height * .01};
 `
 
@@ -29,14 +31,14 @@ function Logo(){
 const SiteName = styled.div`
   color: white;
   float: left;
-  marginBottom: 50%rem;
   maxWidth:100%;
 `
 
 const Header = ({ siteTitle }) => (
 
   <StyledHeader>
-    <Container fluid>
+  <link rel="stylesheet" href="./layout.css"></link>
+    <Container fluid style={{display:"inline-block"}}>
     <Navbar expand="md">
       
       <Navbar.Brand href="/"> <img src={logo} width={40} style={{marginRight:window.screen.availWidth * .015, marginLeft:window.screen.availWidth * .015}}/> {siteTitle} </Navbar.Brand>

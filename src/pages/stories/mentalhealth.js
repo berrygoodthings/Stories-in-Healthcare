@@ -1,11 +1,11 @@
 import {Link,  graphql, StaticQuery, useStaticQuery} from "gatsby"
 import * as React from "react"
-import Layout from '../components/layout'
+import Layout from "../../components/layout.js"
 import {Col, Row, Container} from "react-bootstrap"
-import StoryCard from "../components/StoryCard"
-import StoryCategory from "../components/storiescategories"
+import StoryCard from "../../components/StoryCard.js"
+import StoryCategory from "../../components/storiescategories.js"
 //etc
-import Banner from "../images/stories banner.png"
+import Banner from "../../images/stories banner.png"
 import { render } from "react-dom"
 
 // styles
@@ -19,21 +19,35 @@ const bannerStyle = {
 
 }
 
-const linkStyle = {
-  textDecoration: 'none', 
-  color: "#174474",
-  fontSize: "1.5rem"
-}
+const containsTag = (props) => {
+  console.log("mental health page")
+  console.log(props)
 
-const subLinkStyle = {
-  textDecoration: 'none', 
-  color: "#174474",
-  fontSize: "1.25rem",
-  paddingLeft:"1rem"
+  let tagsLength
+
+  {props.tags ?  
+    tagsLength = props.tags
+    : tagsLength = null}
+
+  if(tagsLength === null){
+    console.log("null")
+    return(null)
+  }
+
+  for(let i = 0; i < tagsLength.length; i++){
+    if(tagsLength[i] === "mental health"){
+      console.log("mental heatlh card printed")
+      
+      return (
+        <StoryCard props={props} />
+      )
+    }
+    else{continue}
+  }
 }
 
 // markup
-const StoriesPage = (props) => {
+const MentalHealthStoriesPage = (props) => {
 
   {console.log("index page")}  
 
@@ -46,13 +60,11 @@ const StoriesPage = (props) => {
       <img src={Banner} style={bannerStyle} />
 
       <Row>
-      
-      <StoryCategory />
-        
+        <StoryCategory />        
         <Col>
         <Row>
           {props.data.allStories.edges.map(edge => (
-              <StoryCard props={edge.node} />
+            containsTag(edge.node)
           ))}</Row>
         </Col>
 
@@ -76,6 +88,7 @@ export const query = graphql`
           cardImage
           summaryText
           title        
+          tags
               }
             }
           }
@@ -83,4 +96,4 @@ export const query = graphql`
       
 `;
 
-export default StoriesPage
+export default MentalHealthStoriesPage
