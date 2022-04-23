@@ -3,7 +3,7 @@ import "./layout.css"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Container, Row, Col, Navbar, Nav } from "react-bootstrap"
+import { Container, Row, Col, Navbar, Nav, DropdownButton } from "react-bootstrap"
 
 import styled from "@emotion/styled"
 import {css, Global} from "@emotion/react"

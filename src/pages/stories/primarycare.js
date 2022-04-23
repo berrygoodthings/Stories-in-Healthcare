@@ -7,6 +7,8 @@ import StoryCategory from "../../components/storiescategories.js"
 //etc
 import Banner from "../../images/stories banner.png"
 import { render } from "react-dom"
+import MobileStoryCategory from "../../components/mobilestoriescategories"
+
 
 // styles
 
@@ -54,6 +56,10 @@ const PrimaryCareStoriesPage = (props) => {
       <Container style={{maxWidth:"90%"}}>
       <img src={Banner} style={bannerStyle} />
 
+      <Row className="d-lg-none d-xs-block">
+        <MobileStoryCategory />
+      </Row>
+      
       <Row>
         <StoryCategory />        
         <Col>
