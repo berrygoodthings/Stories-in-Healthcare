@@ -4,8 +4,8 @@ import Layout from "../components/layout";
 import {Row, Col, Container} from "react-bootstrap"
 
 const cardStyle = {
-    maxHeight: "100%",
-    maxWidth: "90%",
+    minHeight: "95%",
+    maxWidth: "100%",
     border: "3px solid #419FD3",
     margin:"auto",
     marginTop: "1rem",

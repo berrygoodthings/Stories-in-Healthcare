@@ -55,7 +55,7 @@ const Header = ({ siteTitle }) => (
             <Link to="/stories" className="nav-link" activeClassName="active">Stories</Link>
           </Nav>
           <Nav as="ul">
-            <Search />
+            {/* <Search /> */}
           </Nav>
         </Nav>
       </Navbar.Collapse>

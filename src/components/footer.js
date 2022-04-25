@@ -10,15 +10,14 @@ import "./layout.css"
 const footerStyle= {
   background: "#9ADDEC",
   minWidth:"100%",
-  position:"fixed"
-
+  height:"3rem"
 }
 const Footer = ({props}) => {
     
     return(
-    <div style={footerStyle}>
-      <h1>Developing</h1>
-    </div>
+    <navbar className="fixed-bottom" style={footerStyle}>
+      <p>Copyright 2022</p>
+    </navbar>
     ) 
 }
 

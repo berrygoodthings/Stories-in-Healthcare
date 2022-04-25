@@ -38,6 +38,49 @@ module.exports = {
         
       ]
     }
+    },
+
+    {resolve: "gatsby-plugin-local-search",
+      options: {
+        name: "blog",
+        engine: "flexsearch",
+        engineOptions: {
+          encode: "icase",
+          tokenize: "forward",
+          async: false,
+        },
+        query: `
+          {
+            allStories {
+              nodes {
+                testStory
+                id
+              }
+              edges {
+                node {
+                  id
+                  storyText
+                  tags
+                  title
+                  summaryText
+                }
+              }
+            }
+          }
+        `,
+        ref: "id",
+        index: ["title", "storyText"],
+        store: ["id", "tags", "title", "storyText"],
+        normalizer: ({ data }) =>
+          data.allMdx.nodes.map(node => ({
+            id: node.id,
+            storyText: node.storyText,
+            title: node.title,
+            tags: node.tags,
+            summaryText: node.summaryText
+          })),
+      },
     }
+
   ]
   };

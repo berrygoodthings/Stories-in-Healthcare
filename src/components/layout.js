@@ -33,10 +33,11 @@
    return (
      <>
        <Header siteTitle={data.site.siteMetadata.title} />
-       <div style={{paddingTop:"1rem"}}>
-         <div style={{topPadding:"1rem", bottomMargin:"1rem",  minHeight:"80vh"}}><main>{children}</main></div>
-         <Footer />
+       <div style={{paddingTop:"1rem", paddingBottom:"3rem"}}>
+         <div style={{topPadding:"1rem", bottomMargin:"1rem"}}><main>{children}</main></div>
          </div>
+         <Footer />
+
 
      </>
    )
