@@ -7,7 +7,6 @@ exports.createPages = async function ({ actions, graphql }) {
       query {
         allStories {
           nodes {
-            testStory
             id
           }
           edges {
@@ -23,7 +22,6 @@ exports.createPages = async function ({ actions, graphql }) {
       {
       allStories {
         nodes {
-          testStory
           id
         }
         edges {

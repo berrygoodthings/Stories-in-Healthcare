@@ -54,6 +54,8 @@ const PrimaryCareStoriesPage = (props) => {
       
 
       <Container style={{maxWidth:"90%"}}>
+      <Row><h1>Category - Primary Care</h1></Row>
+
       <img src={Banner} style={bannerStyle} />
 
       <Row className="d-lg-none d-xs-block">

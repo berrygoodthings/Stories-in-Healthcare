@@ -22,8 +22,6 @@ const bannerStyle = {
 }
 
 const containsTag = (props) => {
-  console.log("children health page")
-  console.log(props)
 
   let tagsLength
 
@@ -57,6 +55,7 @@ const ChildrenStoriesPage = (props) => {
       
 
       <Container style={{maxWidth:"90%"}}>
+      <Row><h1>Category - Children</h1></Row>
       <img src={Banner} style={bannerStyle} />
 
       <Row className="d-lg-none d-xs-block">

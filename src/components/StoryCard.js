@@ -35,9 +35,11 @@ export default function StoryCard({props}){
     return(
 <Col xs ={12} md={6}>   
         <div style={cardStyle}>
-           <Row> <img src={props.cardImage}  class="img-fluid rounded" style={imageStyle}/></Row>
-           <Row style={{textAlign:"center"}}> <h2><Link to={`/stories/${props.id}`} style={{textDecoration: 'none', color: "#174474",}}>{props.title}</Link></h2></Row>
-           <Row> <div style={summaryStyle}>{props.summaryText}</div></Row>
+            <Row> <img src={props.cardImage} style={imageStyle} alt ={`title image for story titled ${props.title}`}/></Row>
+            <Row style={{textAlign:"center"}}> 
+                <h2><Link to={`/stories/${props.id}`} style={{textDecoration: 'none', color: "#174474",}}>{props.title}</Link></h2>
+            </Row>
+            <Row> <div style={summaryStyle}>{props.summaryText}</div></Row>
            </div>
 </Col>
     )

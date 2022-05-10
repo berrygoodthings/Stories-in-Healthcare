@@ -15,19 +15,6 @@ const bannerStyle = {
 }
 
 function StoryTemplate ({ data }) {
-  console.log(data)
-  
-  // const post = data.
-  // return (
-  //   <Layout>
-  //     <div>
-  //       <h1>{post.testStory}</h1>
-  //       {/**<div dangerouslySetInnerHTML={{ __html: post.html }} />*/}
-  //     </div>
-  //   </Layout>
-  // )
-  
-
 
   return(
     <Layout>
@@ -53,7 +40,6 @@ export const query = graphql`
     query StoriesQuery($storyID: String!) {
         stories(id: {eq: $storyID}){
         id
-        testStory
         storyText
         Banner
         title

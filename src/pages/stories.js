@@ -41,36 +41,25 @@ const StoriesPage = (props) => {
 
   {console.log("index page")}  
 
-
   return (
-    <Layout data = {props.data}>
-      
+    <Layout data = {props.data}> 
 
       <Container style={{maxWidth:"90%"}}>
-      <img src={Banner} style={bannerStyle} />
+      <img src={Banner} style={bannerStyle} alt = "text saying personal stories with image of mother and child" />
      
       <Row className="d-lg-none d-xs-block">
         <MobileStoryCategory />
       </Row>
-      
-      
       <Row>
-      
         <StoryCategory />
-        
         <Col>
         <Row>
           {props.data.allStories.edges.map(edge => (
               <StoryCard props={edge.node} />
           ))}</Row>
         </Col>
-
-
         </Row>
-
-
       </Container>
-
     </Layout>
   )
 }

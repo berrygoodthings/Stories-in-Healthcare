@@ -22,9 +22,6 @@ const bannerStyle = {
 }
 
 const containsTag = (props) => {
-  console.log("respiratory health page")
-  console.log(props)
-
   let tagsLength
 
   {props.tags ?  
@@ -58,6 +55,7 @@ const RespiratoryStoriesPage = (props) => {
       
 
       <Container style={{maxWidth:"90%"}}>
+      <Row><h1>Category - Respiratory</h1></Row>
       <img src={Banner} style={bannerStyle} />
       <Row className="d-lg-none d-xs-block">
         <MobileStoryCategory />

@@ -33,6 +33,9 @@ const StoryCategory =({}) => {
     <ul><Link to="/stories/primarycare" style={linkStyle}>Primary Care</Link></ul>
     <ul><Link to="/stories/secondarycare" style={linkStyle}>Secondary Care</Link></ul>
     <ul><Link to="/stories/hospital" style={linkStyle}>Hospital</Link></ul>
+    
+    <ul><Link to="/stories/womenshealth" style={linkStyle}>Women's Health</Link></ul>
+    <ul><Link to="/stories/sexualhealth" style={linkStyle}>Sexual Health</Link></ul>
 
     </Row>
    

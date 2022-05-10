@@ -17,16 +17,9 @@ module.exports = {
     options: {
       credential: require('./firebase-cred.json'),
       types:[
-          {type: 'Test',
-          collection: 'test',
-          map: doc => ({
-            isWorking: doc.isWorking
-          }
-          )},
           {type: 'Stories',
           collection: 'Stories',
           map: doc => ({
-            testStory: doc.testStory,
             title: doc.title,
             summaryText: doc.summaryText,
             cardImage: doc.cardImage,
@@ -53,7 +46,6 @@ module.exports = {
           {
             allStories {
               nodes {
-                testStory
                 id
               }
               edges {

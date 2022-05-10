@@ -34,7 +34,7 @@ const containsTag = (props) => {
   }
 
   for(let i = 0; i < tagsLength.length; i++){
-    if(tagsLength[i] === "secondary care"){
+    if(tagsLength[i] === "sexual health"){
       
       return (
         <StoryCard props={props} />
@@ -45,7 +45,7 @@ const containsTag = (props) => {
 }
 
 // markup
-const SecondaryCareStoriesPage = (props) => {
+const SexualHealthStoriesPage = (props) => {
 
   {console.log("index page")}  
 
@@ -55,7 +55,7 @@ const SecondaryCareStoriesPage = (props) => {
       
 
       <Container style={{maxWidth:"90%"}}>
-      <Row><h1>Category - Secondary Care</h1></Row>
+      <Row><h1>Category - Sexual Health</h1></Row>
 
       <img src={Banner} style={bannerStyle} />
 
@@ -101,4 +101,4 @@ export const query = graphql`
       
 `;
 
-export default SecondaryCareStoriesPage
+export default SexualHealthStoriesPage
